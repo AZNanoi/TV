@@ -1,0 +1,34 @@
+>>> from TVclass import TvApparat
+>>> import TV
+>>> lista=[('MTv', 'Music is life'), ('Tv3', 'Har du tur i kärlek?'), ('Svt 1', 'Pengar är inte allt'), ('Kanal 4', 'Vem vill inte bli miljonär?')]
+>>> tv=TvApparat(lista, 'VardagsrumsTV', 'Vem vill inte bli miljonär?', 'Kanal 4',  4)
+
+
+#Doctest till TVclass
+>>> tv.bytKanal(3)
+>>> tv.kanal
+'Svt 1'
+>>> tv.program
+'Pengar är inte allt'
+
+>>> tv.sank_volym()
+>>> tv.volym
+3
+>>> tv.hoj_volym()
+>>> tv.volym
+4
+>>> tv.menyer(4)
+'1. VardagsrumsTV\n2. Köks TV\n3. Avsluta'
+
+
+#Doctest till TV
+
+>>> TV.lasFil('vardagsrumsTV.txt')
+('VardagsrumsTV', 'Pengar är inte allt', 'Svt 1', 4)
+
+
+
+
+
+
+
